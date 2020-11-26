@@ -6,7 +6,18 @@ namespace CS8NullBasics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            Message message = new Message
+            {
+                Text = "Hello there",
+                From = null
+            };
+
+            Console.WriteLine(message.Text);
+            Console.WriteLine(message.From);
+            Console.WriteLine(message.ToUpperFrom());
+            Console.WriteLine("Press enter to end");
+            Console.ReadLine();
         }
     }
 }
