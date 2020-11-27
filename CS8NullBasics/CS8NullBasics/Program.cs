@@ -14,7 +14,7 @@ namespace CS8NullBasics
             };
 
             Console.WriteLine(message.Text);
-            Console.WriteLine(message.From);
+            Console.WriteLine(message.From ?? "no from");
             Console.WriteLine(message.ToUpperFrom());
             Console.WriteLine("Press enter to end");
             Console.ReadLine();
