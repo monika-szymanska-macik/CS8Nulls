@@ -9,12 +9,14 @@ namespace CS8NullBasics
 
             Message message = new Message
             {
-                Text = "Hello there",
+                Text = null!,
                 From = null
             };
+            MessagePopulator.Populate(message);
 
             Console.WriteLine(message.Text);
-            Console.WriteLine(message.From ?? "no from");
+            Console.WriteLine(message.From);
+            Console.WriteLine(message.From!.Length);
             Console.WriteLine(message.ToUpperFrom());
             Console.WriteLine("Press enter to end");
             Console.ReadLine();
